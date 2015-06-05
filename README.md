@@ -1,12 +1,16 @@
 #LunarCalendar#
 
-农历（阴历）万年历，是一款支持Node.js和浏览器端使用的全功能农历和公历日历类库。支持农历与公历之间相互转换，含有二十四节气，天干地支纪年纪月纪日，生肖属相，公历节假日及农历传统节假日信息等功能。自带2013-2014节假日安排数据，并可自行配置。带有黄历数据，可自行选择配置。支持1891-2100年。使用**LunarCalendar**可快速开发一款属于自己的万年历产品，行动起来吧！
+此為正體中文版本
+
+請參閱[原始專案](https://github.com/zzyss86/LunarCalendar)
+
+農曆（陰曆）萬年曆，是一款支持Node.js和瀏覽器端使用的全功能農曆和公曆日曆類庫。支持農曆與公曆之間相互轉換，含有二十四節氣，天干地支紀年紀月紀日，生肖屬相，公曆節假日及農曆傳統節假日信息等功能。自帶2013-2014節假日安排數據，並可自行配置。帶有黃曆數據，可自行選擇配置。支持1891-2100年。使用**LunarCalendar**可快速開發一款屬於自己的萬年曆產品，行動起來吧！
 
 ##Install##
 
-1. Node.js服务器端(使用npm安装)：
+1. Node.js服務器端(使用npm安裝)：
 `npm install lunar-calendar`
-2. 浏览器端使用，引用脚本：
+2. 瀏覽器端使用，引用腳本：
 `<script type="text/javascript" src="lib/LunarCalendar.min.js"></script>`
 
 
@@ -14,124 +18,124 @@
 ###Node.js###
 var LunarCalendar = require("lunar-calendar");
 
-###浏览器###
-`window.LunarCalendar`是一个全局对象，可以全局作用域直接调用。
+###瀏覽器###
+`window.LunarCalendar`是一個全局對象，可以全局作用域直接調用。
 
-##DEMO产品：小推万年历（手机版）##
-访问方式：（手机扫描二维码）
+##DEMO產品：小推萬年曆（手機版）##
+訪問方式：（手機掃瞄二維碼）
 
-![二维码](http://cdn.tuijs.com/upload/1956115939.png)
+![二維碼](http://cdn.tuijs.com/upload/1956115939.png)
 
-![小推万年历截图](http://cdn.tuijs.com/upload/calendar_photo.png)
+![小推萬年曆截圖](http://cdn.tuijs.com/upload/calendar_photo.png)
 
 ##方法列表##
 ###LunarCalendar.calendar(year,month[,fill])###
-通过公历获取某月农历数据
+通過公曆獲取某月農曆數據
 
-####参数说明####
-- @param {Number} `year` 公历年 范围[1891-2100]
-- @param {Number} `month` 公历月 范围[1-12]
-- @param {Boolean} `fill`（可选） 是否填充当月日历首尾日期，设为true时，会在首尾填入上下月数据，自动补全一个7*6阵列数据。（可更美观的打造你的万年历产品）
+####參數說明####
+- @param {Number} `year` 公曆年 範圍[1891-2100]
+- @param {Number} `month` 公曆月 範圍[1-12]
+- @param {Boolean} `fill`（可選） 是否填充當月日曆首尾日期，設為true時，會在首尾填入上下月數據，自動補全一個7*6陣列數據。（可更美觀的打造你的萬年曆產品）
 
-####返回数据####
+####返回數據####
 	{
-	    "firstDay": 5, //该月1号星期几（日历开始位置）
-	    "monthDays": 28, //该月天数
-	    "monthData": [ //本月所有日历数据
+	    "firstDay": 5, //該月1號星期幾（日曆開始位置）
+	    "monthDays": 28, //該月天數
+	    "monthData": [ //本月所有日曆數據
 	        {
-	            "year": 2014, //公历年
-	            "month": 2, //公历月
-	            "day": 1, //公历日
-	            "zodiac": "蛇", //生肖属相
-	            "GanZhiYear": "癸巳", //干支纪年
-	            "GanZhiMonth": "乙丑", //干支纪月
-	            "GanZhiDay": "癸卯", //干支纪日
-	            "worktime": 2, //0无特殊安排，1工作，2放假
-	            "lunarYear": 2014, //农历年
-	            "lunarMonth": 1, //农历月（1-13，有闰月情况，比如当前闰9月，10表示闰9月，11表示10月）
-	            "lunarDay": 2, //农历日
-	            "lunarMonthName": "正月", //农历月中文名
-	            "lunarDayName": "初二", //农历日中文名
-	            "lunarLeapMonth": 9, //农历闰月所在月份，0表示无闰月
-				"solarFestival": "", //公历节假日，undefined或‘劳动节’之类
-				"lunarFestival": "", //农历节假日，undefined或‘除夕’之类
-				"term": "" //二十四节气名，undefined或‘立春’之类
+	            "year": 2014, //公曆年
+	            "month": 2, //公曆月
+	            "day": 1, //公曆日
+	            "zodiac": "蛇", //生肖屬相
+	            "GanZhiYear": "癸巳", //干支紀年
+	            "GanZhiMonth": "乙丑", //干支紀月
+	            "GanZhiDay": "癸卯", //干支紀日
+	            "worktime": 2, //0無特殊安排，1工作，2放假
+	            "lunarYear": 2014, //農曆年
+	            "lunarMonth": 1, //農曆月（1-13，有閏月情況，比如當前閏9月，10表示閏9月，11表示10月）
+	            "lunarDay": 2, //農曆日
+	            "lunarMonthName": "正月", //農曆月中文名
+	            "lunarDayName": "初二", //農曆日中文名
+	            "lunarLeapMonth": 9, //農曆閏月所在月份，0表示無閏月
+				"solarFestival": "", //公曆節假日，undefined或『勞動節』之類
+				"lunarFestival": "", //農曆節假日，undefined或『除夕』之類
+				"term": "" //二十四節氣名，undefined或『立春』之類
 	        },
 			...
 	    ]
 	}
 
 ###LunarCalendar.solarCalendar(year,month[,fill])###
-获取公历某月日历数据（不带农历信息）
+獲取公曆某月日曆數據（不帶農曆信息）
 
-####参数说明####
-- @param {Number} `year` 公历年 范围[1-~]公元后
-- @param {Number} `month` 公历月 范围[1-12]
-- @param {Boolean} `fill`（可选） 是否填充当月日历首尾日期，设为true时，会在首尾填入上下月数据，自动补全一个7*6阵列数据。（可更美观的打造你的万年历产品）
+####參數說明####
+- @param {Number} `year` 公曆年 範圍[1-~]公元後
+- @param {Number} `month` 公曆月 範圍[1-12]
+- @param {Boolean} `fill`（可選） 是否填充當月日曆首尾日期，設為true時，會在首尾填入上下月數據，自動補全一個7*6陣列數據。（可更美觀的打造你的萬年曆產品）
 
-####返回数据####
+####返回數據####
 	{
-	    "firstDay": 5, //该月1号星期几（日历开始位置）
-	    "monthDays": 28, //该月天数
-	    "monthData": [ //本月所有日历数据
+	    "firstDay": 5, //該月1號星期幾（日曆開始位置）
+	    "monthDays": 28, //該月天數
+	    "monthData": [ //本月所有日曆數據
 	        {
-	            "year": 2014, //公历年
-	            "month": 2, //公历月
-	            "day": 1 //公历日
+	            "year": 2014, //公曆年
+	            "month": 2, //公曆月
+	            "day": 1 //公曆日
 	        },
 			...
 	    ]
 	}
 
 ###LunarCalendar.solarToLunar(year,month,day)###
-将公历转换为农历
+將公曆轉換為農曆
 
-####参数说明####
-- @param {Number} `year` 公历年 范围[1891-2100]
-- @param {Number} `month` 公历月 范围[1-12]
-- @param {Number} `day` 公历日 范围[1-31]
+####參數說明####
+- @param {Number} `year` 公曆年 範圍[1891-2100]
+- @param {Number} `month` 公曆月 範圍[1-12]
+- @param {Number} `day` 公曆日 範圍[1-31]
 
-####返回数据####
+####返回數據####
 	{
-	    "zodiac": "蛇", //生肖属相
-	    "GanZhiYear": "癸巳", //干支纪年
-	    "GanZhiMonth": "乙丑", //干支纪月
-	    "GanZhiDay": "癸卯", //干支纪日
-	    "worktime": 2, //0无特殊安排，1工作，2放假
-	    "lunarYear": 2014, //农历年
-	    "lunarMonth": 1, //农历月（1-13，有闰月情况，比如当前闰9月，10表示闰9月，11表示10月）
-	    "lunarDay": 2, //农历日
-	    "lunarMonthName": "正月", //农历月中文名
-	    "lunarDayName": "初二", //农历日中文名
-	    "lunarLeapMonth": 9, //农历闰月所在月份，0表示无闰月
-		"solarFestival": "", //公历节假日，undefined或‘劳动节’之类
-		"lunarFestival": "", //农历节假日，undefined或‘除夕’之类
-		"term": "" //二十四节气名，undefined或‘立春’之类
+	    "zodiac": "蛇", //生肖屬相
+	    "GanZhiYear": "癸巳", //干支紀年
+	    "GanZhiMonth": "乙丑", //干支紀月
+	    "GanZhiDay": "癸卯", //干支紀日
+	    "worktime": 2, //0無特殊安排，1工作，2放假
+	    "lunarYear": 2014, //農曆年
+	    "lunarMonth": 1, //農曆月（1-13，有閏月情況，比如當前閏9月，10表示閏9月，11表示10月）
+	    "lunarDay": 2, //農曆日
+	    "lunarMonthName": "正月", //農曆月中文名
+	    "lunarDayName": "初二", //農曆日中文名
+	    "lunarLeapMonth": 9, //農曆閏月所在月份，0表示無閏月
+		"solarFestival": "", //公曆節假日，undefined或『勞動節』之類
+		"lunarFestival": "", //農曆節假日，undefined或『除夕』之類
+		"term": "" //二十四節氣名，undefined或『立春』之類
 	}
 
 ###LunarCalendar.lunarToSolar(year,month,day)###
-将农历转换为公历
+將農曆轉換為公曆
 
-####参数说明####
-- @param {Number} `year` 农历年 范围[1891-2100]
-- @param {Number} `month` 农历月 范围[1-13]（有闰月情况，比如当前闰9月，10表示闰9月，11表示10月）
-- @param {Number} `day` 农历日 范围[1-30]
+####參數說明####
+- @param {Number} `year` 農曆年 範圍[1891-2100]
+- @param {Number} `month` 農曆月 範圍[1-13]（有閏月情況，比如當前閏9月，10表示閏9月，11表示10月）
+- @param {Number} `day` 農曆日 範圍[1-30]
 
-####返回数据####
+####返回數據####
 	{
-	    "year": 2014, //公历年
-	    "month": 1, //公历月
-	    "day": 31 //公历日
+	    "year": 2014, //公曆年
+	    "month": 1, //公曆月
+	    "day": 31 //公曆日
 	}
 
 ###LunarCalendar.setWorktime(data)###
-设置某年的节假日安排信息（类库已内置2013-2014年的数据）
+設置某年的節假日安排信息（類庫已內置2013-2014年的數據）
 
-####参数说明####
-- @param {Object} `data` 节假日安排信息(以年为key，可设置多年)
-- 0：无特殊安排，1：工作，2：放假
+####參數說明####
+- @param {Object} `data` 節假日安排信息(以年為key，可設置多年)
+- 0：無特殊安排，1：工作，2：放假
 
-**参数data格式如下：**
+**參數data格式如下：**
 
 	{
 	    "y2014": {
@@ -165,23 +169,23 @@ var LunarCalendar = require("lunar-calendar");
 	    }
 	}
 
-##黄历数据##
-在目录/hl/下有2008-2020年的黄历数据，用户可自行选择在自己万年历中进行添加。
+##黃曆數據##
+在目錄/hl/下有2008-2020年的黃曆數據，用戶可自行選擇在自己萬年曆中進行添加。
 
-##公用服务器API##
-用Node.js搭载lunar-calendar类库。
+##公用服務器API##
+用Node.js搭載lunar-calendar類庫。
 
 - API:http://api.tuijs.com/
-- 请求类型：GET
-- 返回数据：JSON 或 JSONP
-- JSONP：支持，添加参数callback（仅支持数字，字母，下划线）
+- 請求類型：GET
+- 返回數據：JSON 或 JSONP
+- JSONP：支持，添加參數callback（僅支持數字，字母，下劃線）
 
 ###API列表###
 
-- 通过公历获取某月农历数据 http://api.tuijs.com/calendar
-- 获取公历某月日历数据（不带农历信息）http://api.tuijs.com/solarCalendar
-- 将公历转换为农历http://api.tuijs.com/solarToLunar
-- 将农历转换为公历http://api.tuijs.com/lunarToSolar
+- 通過公曆獲取某月農曆數據 http://api.tuijs.com/calendar
+- 獲取公曆某月日曆數據（不帶農曆信息）http://api.tuijs.com/solarCalendar
+- 將公曆轉換為農曆http://api.tuijs.com/solarToLunar
+- 將農曆轉換為公曆http://api.tuijs.com/lunarToSolar
 
 **例如：**
 
@@ -191,7 +195,7 @@ http://api.tuijs.com/lunarToSolar?year=2011&month=1&day=1&callback=fn
 `fn({"year":2011,"month":2,"day":16})`
 
 ##其它##
-- 项目主页：[http://www.tuijs.com/](http://www.tuijs.com/ "项目主页")
+- 項目主頁：[http://www.tuijs.com/](http://www.tuijs.com/ "項目主頁")
 - 作者博客：[http://www.2fz1.com/](http://www.2fz1.com/ "作者博客")
 
 JasonZhou
