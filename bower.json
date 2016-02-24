@@ -1,0 +1,31 @@
+{
+  "name": "lunar-calendar-zh",
+  "description": "農曆（陰曆）萬年曆，是一款支持Node.js和瀏覽器端使用的全功能農曆和公曆日曆類庫。支持農曆與公曆之間相互轉換，含有二十四節氣，天干地支紀年紀月紀日，生肖屬相，公曆節假日及農曆傳統節假日信息等功能。自帶2013-2014節假日安排數據，並可自行配置。帶有黃曆數據，可自行選擇配置。支持1891-2100年。",
+  "main": "./lib/LunarCalendar.js",
+  "authors": [
+    "Po Han Chen <myywar@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chinese",
+    "lunar",
+    "lunar",
+    "農曆",
+    "陽曆",
+    "萬年曆",
+    "LunarCalendar",
+    "calendar"
+  ],
+  "homepage": "https://github.com/mywarr/LunarCalendar",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
